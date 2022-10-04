@@ -1,0 +1,40 @@
+<html>
+   
+<head>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<h1>Exemple d'un site Internet</h1>
+
+
+<ul id="ListeExemple">
+<li>Première Ligne</li>
+
+
+</ul>
+
+<input id=ButtonText type="text">
+<button id=ButtonClick onclick="AddListe()">Bouton pour rajouter une ligne dans la liste</button>
+
+<script>
+
+
+function AddListe (){
+var Liste = document.getElementById('ListeExemple');
+var inputtext = document.getElementById('ButtonText').value;
+var addline = "<li>"+ inputtext+"</li>";
+Liste.innerHTML = Liste.innerHTML + addline ;
+
+console.log("Test Liste");
+}
+
+</script>
+
+
+</body>
+
+
+</html>
